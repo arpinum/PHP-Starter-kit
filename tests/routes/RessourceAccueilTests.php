@@ -2,13 +2,13 @@
 
 use routes\RessourceAccueil;
 
-class RessourceAccueilTests extends PHPUnit_Extensions_OutputTestCase
+class RessourceAccueilTests extends TestWeb
 {
     function testPeutFaireDesChoses()
     {
-        $reponse = \routes\RessourceAccueil::represente(Slim::getInstance());
+        \routes\RessourceAccueil::represente($this->instanceSlim());
 
-
-        $this->expectOutputRegex("*Jean-Baptiste Dusseaut*");
+        $this->verifieRenduContient("Jean-Baptiste Dusseaut");
     }
+
 }

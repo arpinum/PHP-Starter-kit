@@ -588,7 +588,7 @@ class Slim {
      * callable to render a template whose output is appended to the
      * current HTTP response body. How the template is rendered is
      * delegated to the current View.
-     *
+     *z
      * @param   string  $template   The name of the template passed into the View::render method
      * @param   array   $data       Associative array of data made available to the View
      * @param   int     $status     The HTTP response status code to use (Optional)

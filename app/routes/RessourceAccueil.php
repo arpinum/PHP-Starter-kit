@@ -10,5 +10,5 @@ class RessourceAccueil {
 
 
 $app->get('/', function() use($app) {
-    RessourceAccueil::represente($app);
+    echo RessourceAccueil::represente($app);
 });
